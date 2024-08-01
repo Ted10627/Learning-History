@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>叫號系統</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-all {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .top {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .foot {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            margin-left: 5px;
+        }
+
+        input {
+            margin-left: 5px;
+        }
+
+        .out {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-all">
+        <h2>叫號系統</h2>
+        <div class="top">
+            <label>姓名:</label>
+            <input type="text" id="input" placeholder="輸入姓名">
+            <select name="grading" id="grading">
+                <option value="0">一般級</option>
+                <option value="1">優先級</option>
+                <option value="2">特殊級</option>
+            </select>
+            <button type="button" id="in-btn">輸入</button>
+            <button type="button" id="call-btn">叫號</button>
+        </div>
+        <div class="foot">
+            <div id="out" class="out">
+            </div>
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector('#in-btn');
+        const call = document.querySelector('#call-btn');
+        const input = document.querySelector('#input');
+        const out = document.querySelector('#out');
+        const list = document.querySelector('#list');
+        const grading = document.querySelector('#grading');
+        let array = [];
+        let lv = ['一般級', '優先級', '特殊級'];
+        list.style.backgroundColor = '#ffabab';
+        out.style.backgroundColor = '#c3ffab';
+
+        //自訂更新updete函數
+        function update() {
+            list.innerHTML = '';
+            //檢查陣列所有person物件
+            array.forEach(person => {
+                const list_i = document.createElement('li');
+                //創建li印出結果
+                list_i.innerHTML = `姓名:${person.name}/${lv[person.grad]}`;
+                //list中產生list_i的資料節點(子層)
+                list.appendChild(list_i);
+            });
+        }
+
+        btn.addEventListener('click', function () {
+            const name = input.value.trim();
+            const grad = parseInt(grading.value);
+            if (name) {
+                // 輸入陣列
+                array.push({ name: name, grad: grad });
+                // 清空設定值
+                input.value = '';
+                grading.value = '0';
+                update();
+            }
+        });
+
+        call.addEventListener('click', function () {
+            // 檢查陣列有無資料
+            if (array.length === 0) {
+                out.innerHTML = '無待叫病人';
+                return;
+            }
+            // 排序 陣列資料取a與b並比較排序
+            //b-a為降序，邏輯為:正數時a排於前面-負數排後面-等於不動
+            array.sort((a, b) => b.grade - a.grade);
+            // shift()負責將第一個陣回傳與移除
+            const next = array.shift();
+            //印出結果
+            out.innerHTML = `叫號:${next.name}/${lv[next.grad]}`;
+            update();
+        });
+    </script>
+</body>
+
+</html>

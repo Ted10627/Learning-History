@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="./css/13-0620BMI計算.css">
+</head>
+
+<body>
+    <div class="box-all">
+        <h1>BMI計算機</h1>
+        <form id="in">
+            <label class="title">身高</label>
+            <div class="box">
+                <input type="number" id="input-1" required><span class="unit">cm</span>
+            </div>
+            <label class="title">體重</label>
+            <div class="box">
+                <input type="number" id="input-2" required><span class="unit">kg</span>
+            </div>
+            <button class="in-button" type="submit" id="submit">計算</button>
+        </form>
+        <h2>BMI指數:<span id="out"></span></h2>
+        <table>
+            <thead>
+                <tr class="thead">
+                    <th></th>
+                    <th>身體指數</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="heavy-1" class="tr">
+                    <th>體重過輕</th>
+                    <th>BMI < 18.5</th>
+                </tr>
+                <tr id="heavy-2" class="tr">
+                    <th>正常範圍</th>
+                    <th>18.5 < BMI < 24</th>
+                </tr>
+                <tr id="heavy-3" class="tr">
+                    <th>過重</th>
+                    <th>24 < BMI < 27</th>
+                </tr>
+                <tr id="heavy-4" class="tr">
+                    <th>輕度肥胖</th>
+                    <th>27 < BMI < 30</th>
+                </tr>
+                <tr id="heavy-5" class="tr">
+                    <th>中度肥胖</th>
+                    <th>30 < BMI < 35 </th>
+                </tr>
+                <tr id="heavy-6" class="tr">
+                    <th>重度肥胖</th>
+                    <th>BMI > 35</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/13-0620BMI計算.js"></script>
+
+</body>
+
+</html>

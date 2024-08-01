@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://drive.google.com/thumbnail?id=1Mu0tJ2h5GuwDtec_UfXXZ-4aN1u34cJC&sz=w1366");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.in-button {
+  display: block;
+  margin-top: 10px;
+  width: 110px;
+  font-size: 20px;
+}
+
+.unit {
+  font-size: 18px;
+  margin-left: 6px;
+}
+
+.box-all {
+  background-color: rgba(250, 235, 215, 0.3764705882);
+  padding: 0 16px;
+}
+
+table {
+  border: 2px solid black;
+  width: 220px;
+}
+
+.thead {
+  background-color: #ffe65b;
+}
+
+.tr {
+  background-color: #d8ffff;
+}/*# sourceMappingURL=13-0620BMI計算.css.map */

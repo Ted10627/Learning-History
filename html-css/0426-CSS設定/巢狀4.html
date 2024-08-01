@@ -1,0 +1,89 @@
+<!-- ctrl+?可以註解 -->
+<!-- Alt+Shift+F可以自動縮排程式碼 -->
+<!-- 任何標籤輸入完後+Tab可以自動加上<>與</>字符 -->
+<!-- 依據W3c標準寫的 -->
+<!DOCTYPE html>
+<!-- 預設英文 -->
+<html lang="en">
+  <head>
+    <!-- UTF-8萬國碼 -->
+    <meta charset="UTF-8" />
+    <!-- 行動裝置上才能使用 -->
+    <meta name="viewport" content="width=device-widh,initial-scale=1.0" />
+
+    <title>回家作業float 4</title>
+    <!-- 此為CSS設定 -->
+    <style>
+      /* #字號告訴CSS此為ID */
+      #top {
+        width: 600px;
+        height: 150px;
+        background-color: red;
+      }
+      #middle {
+        width: 600px;
+        height: 500px;
+        background-color: orange;
+        float: left;
+      }
+      #m-left1 {
+        width: 150px;
+        height: 300px;
+        background-color: blue;
+        float: left;
+      }
+      #m-left2 {
+        width: 300px;
+        height: 100px;
+        background-color: blueviolet;
+        float: left;
+      }
+      #m-left3 {
+        width: 300px;
+        height: 100px;
+        background-color: rgb(125, 246, 114);
+        float: left;
+      }
+      #m-left4 {
+        width: 300px;
+        height: 100px;
+        background-color: green;
+        float: left;
+      }
+      #m-left5 {
+        width: 450px;
+        height: 100px;
+        background-color: rgb(202, 161, 238);
+        float: left;
+      }
+      #m-left6 {
+        width: 450px;
+        height: 100px;
+        background-color: rgb(246, 177, 114);
+        float: left;
+      }
+      #bottom {
+        width: 600px;
+        height: 150px;
+        background-color: yellow;
+        float: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- #all>#top+(#middle>#m-left+#m-right)+#bottom -->
+    <div id="all">
+      <div id="top"></div>
+      <div id="middle">
+        <div id="m-left1"></div>
+        <div id="m-left2"></div>
+        <div id="m-left3"></div>
+        <div id="m-left4"></div>
+        <div id="m-left5"></div>
+        <div id="m-left6"></div>
+        <div id="bottom"></div>
+      </div>
+    </div>
+  </body>
+</html>

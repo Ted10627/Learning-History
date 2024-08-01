@@ -1,0 +1,174 @@
+<!-- ctrl+?可以註解 -->
+<!-- Alt+Shift+F可以自動縮排程式碼 -->
+<!-- 任何標籤輸入完後+Tab可以自動加上<>與</>字符 -->
+<!-- 依據W3c標準寫的 -->
+<!DOCTYPE html>
+<!-- 預設英文 -->
+<html lang="en">
+
+<head>
+    <!-- UTF-8萬國碼 -->
+    <meta charset="UTF-8">
+    <!-- 行動裝置上才能使用 -->
+    <meta name="viewport" content="width=device-widh,initial-scale=1.0">
+
+    <title>Document</title>
+    <!-- 此為CSS設定 -->
+    <style>
+        /* #字號告訴CSS此為ID */
+        #w1 {
+            color: red;
+            background-color: black;
+        }
+
+        #w2 {
+            color: darkblue;
+        }
+
+        #box-A {
+            background-color: red;
+            color: yellow;
+            /* 設定寬度 */
+            width: 80px;
+            /* 設定高度 */
+            height: 50px;
+            /* text-align為文字對齊方式，left靠左/center水平居中/right靠右/justify分散對齊 */
+            text-align: center;
+            /* 此為設定文字行高 */
+            line-height: 50px;
+            /* 設定元素向左浮動 */
+            float: left;
+            /* clear:left; */
+        }
+
+        #box-B {
+            background-color: blue;
+            color: wheat;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+            clear: left;
+        }
+
+        #box-C {
+            background-color: rgb(133, 163, 15);
+            color: blueviolet;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            line-height: 150px;
+            float: right;
+
+        }
+
+        #text1 {
+            background-color: red;
+            color: orange;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+            clear: right;
+        }
+
+        #text2 {
+            background-color: orange;
+            color: yellow;
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            float: left;
+            clear: left;
+        }
+
+        #text3 {
+            background-color: yellow;
+            color: green;
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            float: right;
+        }
+
+        #text4 {
+            background-color: green;
+            color: blue;
+            width: 130px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            float: right;
+            clear: left;
+        }
+
+        /* #top{
+            width: 600px;
+            height: 100px;
+            background-color:red;
+        }
+        #middle{
+            width: 600px;
+            height: 300px;
+            background-color: orange;
+        }
+        #m-left{
+            width: 300px;
+            height: 150px;
+            background-color: blue;
+            float: left;
+        }
+        #m-right{
+            width: 300px;
+            height: 150px;
+            background-color:blueviolet;
+            float:right;
+        }
+        #bottom{
+            width: 600px;
+            height: 300px;
+            background-color:yellow;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- div的特性是 -->
+    <!-- 1個div獨自佔一行 -->
+    <!-- div會自動換行 -->
+    <div id="w1">測試網頁</div>
+    <p>內容</p>
+    <!-- id是如同身分證一般能為各個div設定獨立的id -->
+    <!-- id不可使用中文/特殊符號設定，符號 _ 與 - 除外 -->
+    <!-- id會對大小寫敏感(分辨大小寫)，建議小寫為主 -->
+    <!-- HTML內習慣用"" -->
+    <div id="W2">此為第二行</div>
+    <!-- 可以用#w3+TAB來自動加上div標籤 -->
+    <div id="w3"></div>
+    <!-- 可以用#box-*3的方式變出多行ID -->
+    <div id="box-A">A</div>
+    <div id="box-B">B</div>
+    <div id="box-C">C</div>
+    <!-- 課堂練習設5個div，練習float設定 -->
+    <div id="text1">D</div>
+    <div id="text2">E</div>
+    <div id="text3">F</div>
+    <div id="text4">G</div>
+    <!-- #all>#top+(#middle>#m-left+#m-right)+#bottom -->
+    <!-- <div id="all">
+        <div id="top"></div>
+        <div id="middle">
+            <div id="m-left"></div>
+            <div id="m-right"></div>
+        </div>
+        <div id="bottom"></div>
+    </div> -->
+
+
+</body>
+
+</html>

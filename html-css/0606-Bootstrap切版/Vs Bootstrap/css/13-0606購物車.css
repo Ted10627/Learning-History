@@ -1,0 +1,79 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.schedule-absolute {
+  position: absolute;
+  transform: translate(85%, -300%);
+}
+
+.schedule-relative {
+  position: relative;
+}
+
+.schedule-position {
+  transform: translate(65%, 20%);
+  position: absolute;
+}
+
+.schedule-w {
+  width: 70%;
+}
+
+.schedule-min {
+  min-width: 40px;
+}
+
+.schedule-min-total {
+  min-width: 63px;
+}
+
+.schedule-jus-total {
+  display: flex;
+  justify-content: end;
+}
+
+.container-foot-py {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.min-48 {
+  min-width: 48px;
+}
+
+.min-72 {
+  min-width: 72px;
+}
+
+.bg-gray-400 {
+  background-color: #ced4da;
+}
+
+.bg-gray-300 {
+  background-color: #dee2e6;
+}
+
+.bg-gray-100 {
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 991px) {
+  .schedule-w {
+    width: 55%;
+  }
+  .schedule-position {
+    transform: translate(80%, 20%);
+  }
+  .schedule-jus-total {
+    justify-content: start;
+  }
+  .container-foot-py {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .ch {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=13-0606購物車.css.map */

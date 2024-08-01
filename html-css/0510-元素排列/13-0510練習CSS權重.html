@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS優先順序</title>
+    <style>
+        #a {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+        CSS權重
+        權重是CSS判斷先順序的依據
+        權重大優先度也大
+        ID > class > 元素(element)
+        如權重一樣則照以上的優先順序
+    </pre>
+    <div id="a" class="b"></div>
+    <div id="a" class="big"></div>
+</body>
+
+</html>

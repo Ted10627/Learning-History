@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三圖切換</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box-all {
+            width: 70%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top:30px;
+        }
+        .btn{
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 100%;
+        }
+        button{
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-all">
+        <div class="btn">
+            <button type="button" id="m-1">圖片1</button>
+            <button type="button" id="m-2">圖片2</button>
+            <button type="button" id="m-3">圖片3</button>
+        </div>
+        <div class="out" id="out"></div>
+    </div>
+
+    <script>
+        const btn1 = document.querySelector('#m-1');
+        const btn2 = document.querySelector('#m-2');
+        const btn3 = document.querySelector('#m-3');
+        const out = document.querySelector('#out');
+        const img = document.createElement('img');
+
+        btn1.addEventListener('click', function () {
+            img.src = './image/6-1.jpg';
+            out.appendChild(img);
+        });
+
+        btn2.addEventListener('click', function () {
+            img.src = './image/8-4.jpg'
+            out.appendChild(img);
+        });
+
+        btn3.addEventListener('click', function () {
+            img.src = './image/圖3.jpg'
+            out.appendChild(img);
+        });
+
+    </script>
+</body>
+
+</html>

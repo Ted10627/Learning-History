@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>終極密碼</title>
+</head>
+
+<body>
+    <input type="number" id="input" placeholder="0~100">
+    <button type="button" id="btn">開始</button>
+    <div id="out">
+        <span>0</span><span>~</span><span>100</span>
+    </div>
+    <script>
+        let minnum = 0;
+        let maxnum = 100;
+        let random = Math.floor(Math.random() * 101);
+        let btn = document.querySelector('#btn');
+        let out = document.querySelector('#out');
+        btn.addEventListener('click', function () {
+            let input = document.querySelector('#input');
+            let guess = parseInt(input.value);
+            if (input.value == '') {
+                alert('不能輸入空值');
+            } else if (guess > maxnum || guess < minnum) {
+                alert('不能超過設定範圍的最大/最小值');
+            } else if (guess === random) {
+                out.innerHTML = `<span>恭喜答對</span>`;
+            } else if (guess < random) {
+                minnum = guess;
+                out.innerHTML = `<span>猜小了</span><span>${minnum}</span><span>~</span><span>${maxnum}</span>`;
+            } else {
+                maxnum = guess;
+                out.innerHTML = `<span>猜大了</span><span>${minnum}</span><span>~</span><span>${maxnum}</span>`;
+            }
+        });
+    </script>
+</body>
+
+</html>

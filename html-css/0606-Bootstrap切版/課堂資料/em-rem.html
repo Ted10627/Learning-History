@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      font-size: 32px;
+    }
+    body {
+      font-size: 32px;
+    }
+
+    .px16 {
+      font-size: 16px;
+    }
+
+    .px20 {
+      font-size: 16px;
+    }
+
+    .px24 {
+      font-size: 16px;
+    }
+
+    .px32 {
+      font-size: 16px;
+    }
+
+    .em1dot2 {
+      font-size: 1.2em;
+    }
+    .rem1dot2 {
+      font-size: 1.2rem;
+    }
+    .percent120 {
+      font-size: 120%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 1.px => 絕對單位，設多少就多少 -->
+  <div class="px16">16px
+    <div class="px20">20px
+      <div class="px24">24px
+        <div class="px32">32px</div>
+      </div>
+    </div>
+  </div>
+  <!-- 2.em => 相對單位，每個子元素以倍數乘以父元素 -->
+  <div class="em1dot2">1.2em (16px*1.2)
+    <div class="em1dot2">1.2em (16*1.2)*1.2
+      <div class="em1dot2">1.2em
+        <div class="em1dot2">1.2em</div>
+      </div>
+    </div>
+  </div>
+  <!-- 3.rem => 相對單位，每個子元素以倍數乘以根元素 -->
+  <div class="rem1dot2">1.2rem (16px*1.2)
+    <div class="rem1dot2">1.2rem (16*1.2)
+      <div class="rem1dot2">1.2rem
+        <div class="rem1dot2">1.2rem</div>
+      </div>
+    </div>
+  </div>
+    <!-- 4.% => 相對單位，每個子元素以倍數乘以父元素， 與em大同小異 -->
+    <div class="percent120">120percent (16px*1.2)
+      <div class="percent120">120percent (16*1.2)*1.2
+        <div class="percent120">120percent
+          <div class="percent120">120percent</div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

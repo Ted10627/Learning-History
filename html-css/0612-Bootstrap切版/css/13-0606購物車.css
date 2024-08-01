@@ -1,0 +1,156 @@
+body {
+  padding: 0;
+}
+
+html {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.rwd-mp-x {
+  padding-left: 48px;
+  margin-left: 48px;
+  padding-right: 48px;
+  margin-right: 48px;
+}
+
+.rwd-p-x {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.rwd-mp-y {
+  padding-left: 48px;
+  margin-left: 48px;
+  padding-right: 48px;
+  margin-right: 48px;
+}
+
+.schedule-absolute {
+  position: absolute;
+  transform: translate(85%, -300%);
+}
+
+.schedule-relative {
+  position: relative;
+}
+
+.schedule-position {
+  transform: translate(65%, 20%);
+  position: absolute;
+}
+
+.schedule-w {
+  width: 70%;
+}
+
+.schedule-min {
+  min-width: 40px;
+}
+
+.schedule-min-total {
+  min-width: 63px;
+}
+
+.schedule-jus-total {
+  display: flex;
+  justify-content: end;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.container-foot-py {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.min-48 {
+  min-width: 48px;
+}
+
+.min-72 {
+  min-width: 72px;
+}
+
+.bg-gray-400 {
+  background-color: #ced4da;
+}
+
+.bg-gray-300 {
+  background-color: #dee2e6;
+}
+
+.bg-gray-200 {
+  background-color: #E9ECEF;
+}
+
+.bg-gray-100 {
+  background-color: #f8f9fa;
+}
+
+.color-1 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+.color-1::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  top: -50px;
+  right: -50px;
+}
+
+.color-1::after {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #7a7a7a;
+  border-radius: 50%;
+  bottom: -50px;
+  right: -50px;
+}
+
+@media (max-width: 991px) {
+  .schedule-w {
+    width: 55%;
+  }
+  .rwd-mp-x {
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+  .rwd-p-x {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .rwd-mp-y {
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+  .schedule-position {
+    transform: translate(80%, 20%);
+  }
+  .schedule-jus-total {
+    justify-content: start;
+  }
+  .container-foot-py {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .ch {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=13-0606購物車.css.map */

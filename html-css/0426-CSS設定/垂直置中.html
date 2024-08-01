@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>垂直練習</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: calc(100vh(100vh - 600px) / 2);
+            background-color: yellow;
+            padding-top: calc((100vh - 600px) / 2)
+        }
+
+        #all {
+            width: 600px;
+            height: calc(600px - (600px - 100px) / 2);
+            background-color: red;
+            padding-top: calc((600px - 100px) / 2);
+            margin: auto;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <div id="box"></div>
+    </div>
+</body>
+
+</html>

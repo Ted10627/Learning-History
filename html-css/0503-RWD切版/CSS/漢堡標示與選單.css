@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: #ae00ff;
+    padding: 10px 20px;
+    position: relative;
+}
+.nav-btn-all {
+    width: 150px;
+    margin-top: 15px;
+    float: right;
+    display: none;
+    position: absolute;
+}
+
+.nav-btn {
+    background-color: #cc00ff77;
+    width: 150px;
+    height: 50px;
+    float: left;
+    margin-left: 5px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #fdfaff;
+}
+
+.nav-btn:hover {
+    color: black;
+    background-color: #e064ff;
+    border: 1px solid black;
+}
+
+.nav-btn:active {
+    background-color: #8500a7;
+}
+
+.ham-btn {
+    background-color: #00000041;
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: relative;
+}
+
+.ham-btn .line {
+    width: 80%;
+    height: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    position: absolute;
+    transition: 0.5s;
+
+}
+
+.ham-btn .line-1 {
+    top: 25%;
+}
+
+.ham-btn .line-2 {
+    top: 50%;
+}
+
+.ham-btn .line-3 {
+    top: 75%;
+}
+/* 以下漢堡標 */
+#ham-switch:checked+.ham-btn .line-1 {
+    top: 50%;
+    background-color: #d6aaff;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+}
+
+#ham-switch:checked+.ham-btn .line-3 {
+    top: 50%;
+    background-color: #d6aaff;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#ham-switch:checked+.ham-btn .line-2 {
+    top: 50%;
+    background-color: #d6aaff;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+#ham-switch:checked~.nav-btn-all{
+    display: block;
+}

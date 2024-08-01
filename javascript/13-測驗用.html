@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>測驗用</title>
+    <style>
+        .box {
+            display: flex;
+            margin: 50px;
+        }
+
+        .num {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+        }
+
+        .num-sp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <button class="neg">-</button>
+        <div class="num">1</div>
+        <button class="plus">+</button>
+        <span class="num-sp price" id="">$10.5</span>
+    </div>
+    <div class="box">
+        <button class="neg">-</button>
+        <div class="num">1</div>
+        <button class="plus">+</button>
+        <span class="num-sp price" id="">$8.5</span>
+    </div>
+    <div>
+        <span>件數:</span><span class="num-sp" id="amount">2</span>
+        <span>小計:</span><span class="num-sp" id="subtotal">$19</span>
+        <span>運費:</span><span class="num-sp" id="fare">$1</span>
+        <span>總計:</span><span class="num-sp" id="total">$20</span>
+    </div>
+    <script>
+        const negAll = document.querySelectorAll('.neg');
+        const numAll = document.querySelectorAll('.num');
+        const plusAll = document.querySelectorAll('.plus');
+        const priceAll = document.querySelectorAll('.price');
+        const amount = document.querySelector('#amount');
+        const subtotal = document.querySelector('#subtotal');
+        const fare = parseFloat(document.querySelector('#fare').innerHTML.repeat('$', ''));
+        const total = document.querySelector('#total');
+
+        function updete() {
+            let totalnum = 0;
+            let subprice = 0;
+            negAll.forEach((negBtn, i) => {
+                const numvalue = parseInt()
+            });
+        }
+        negBtn.addEventListener('click', function () {
+            let num = numAll[i];
+            let currentNum = parseInt(num.innerHTML);
+            let in_price = parentInt(price.innerHTML);
+            if (currentNum > 1) {
+                num.innerHTML = currentNum - 1;
+            }
+        });
+
+        plusAll.forEach((plusBtn, i) => {
+            plusBtn.addEventListener('click', function () {
+                let num = numAll[i];
+                let currentNum = parseInt(num.innerHTML);
+                num.innerHTML = currentNum + 1;
+            });
+        });
+    </script>
+</body>
+
+</html>

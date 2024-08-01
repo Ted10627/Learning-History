@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>px絕對單位 %相對單位</title>
+    <style>
+        #all{
+            width:80%;
+            height: 600px;
+            background-color:red;
+            padding:10px;
+            margin: auto;
+        }
+        #box-1{
+            width:calc(33% - 10px);
+            height:100%;
+            background-color:orange;
+            float:left;
+            margin-right:10px;
+        }
+        #box-2{
+            width:calc(34% - 10px);
+            height:100%;
+            background-color:yellow;
+            float:left;
+            margin-right:10px;
+        }
+        #box-3{
+            width:33%;
+            height:100%;
+            background-color:green;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="box-1"></div>
+        <div id="box-2"></div>
+        <div id="box-3"></div>
+    </div>
+</body>
+</html>

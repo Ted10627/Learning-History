@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID選擇器</title>
+    <style>
+        /* 通用選擇器*/
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 標籤選擇器 */
+        body {
+            margin: 0;
+        }
+
+        div {
+            margin-bottom: 10px;
+            color: white;
+            background-color: black;
+        }
+
+        /* 類別選擇器 */
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* ::XXX 偽元素 */
+        #my-box::first-letter{
+            font-size: 32px;
+            color:yellow;
+        }
+        /* 偽類:XXX,一個狀態*/
+        .box:hover{
+            background-color: blueviolet;
+        }
+        input:checked{
+            background-color: red;
+        }
+        /* 兄弟選擇器 */
+        input:checked+label{
+            background-color: chartreuse;
+        }
+        input[type="text"]{
+            color:blue;
+        }
+        div:is(.is-box){
+            background-color: aqua;
+        }
+        div:is(.circle){
+            background-color: brown;
+            border-radius: 50%;
+        }
+        div:not(.is-box){
+            background-color: chocolate;
+        }
+        .box.circle.green{
+            background-color: pink;
+        }
+        input,#box{
+            width: 100px;
+            height: 30px;
+            background-color: deeppink;
+        }
+            </style>
+</head>
+
+<body>
+    <div class="my-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odit, eligendi totam ab accusantium
+        ratione sed modi ad, aliquid molestiae saepe, dignissimos pariatur! Aut sapiente facilis deleniti dolor, ex
+        placeat!</div>
+    <div class="box">Lorem, ipsum dolor.
+        Commodi, odio vero.
+        Aperiam, minus repudiandae?</div>
+        <input type="checkbox" id="username" name="username">
+        <label for="">牛肉</label>
+        <input type="text" id="username" name="username">
+        <input type="text" id="username" name="username">
+    <div class="box is-box">A</div>
+    <div class="box circle green">A</div>
+    </body>
+
+</html>

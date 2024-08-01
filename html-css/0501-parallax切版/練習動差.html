@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax 簡易id版</title>
+    <style>
+        body {
+            margin: 0;
+            height: 3000px;
+        }
+
+        #banner-1,#banner-4 {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./image/動差網頁/背景圖1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: black;
+            position: relative;
+        }
+
+        #btn-1,#btn-2,#btn-3,#btn-4 {
+            width: 30%;
+            height: 10%;
+            color: #ffffff;
+            position: absolute;
+            padding: 10px 20px;
+            font-size: 32px;
+            margin-left: 2%;
+            letter-spacing: 8px;
+            font-family: 'Times New Roman', Times, serif;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        #btn-1,#btn-4{
+            background-color: #0000008c;
+        }
+        #banner-2 {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./image/動差網頁/背景圖2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: black;
+            position: relative;
+        }
+        #btn-2{
+            background-color: #ffffff6c;
+        }
+        #text-1,#text-2{
+            text-align:justify;
+            font-size: 24px;
+        }
+        #banner-3 {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./image/動差網頁/背景圖3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: black;
+            position: relative;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="banner-1">
+        <div id="btn-1">SCROLL DOWN</div>
+    </div>
+    <div id="banner-2">
+        <div id="title-1"></div>
+        <div id="btn-2">LESS HEIGHT</div>
+        <div id="text-1"></div>
+    </div>
+    <div id="banner-3">
+        <div id="btn-3">UP</div>
+        <div id="text-2"></div>
+    </div>
+    <div id="banner-4">
+        <div id="btn-4">Coll!</div>
+    </div>
+</body>
+
+</html>

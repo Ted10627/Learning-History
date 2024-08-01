@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>回家作業0502</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+        }
+
+        .nav {
+            width: calc(80% - (10px * 2));
+            height: calc(80px - (10px * 2));
+            padding: 10px;
+            background-color: yellowgreen;
+            position: fixed;
+            left: 10%;
+            
+        }
+
+        .container {
+            background-color: aliceblue;
+            width: 80%;
+            height: 800px;
+            margin: auto;
+        }
+
+        .banner {
+            width: 100%;
+            height: 50vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-attachment: fixed;
+            padding-top: 50vh;
+            
+        }
+
+        #banner-1 {
+            background-image: url(./image/背景圖3.jpg);
+        }
+
+        #banner-2 {
+            background-image: url(./image/背景圖2.jpg);
+        }
+
+        #banner-3 {
+            background-image: url(./image/背景圖1.jpg);
+        }
+
+        .mask {
+            background-color: black;
+            width: 100%;
+            height: 50vh;
+            opacity: 0.5;
+            position: relative;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            width: 100px;
+            height: 50px;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-image: url(./image/頭相.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+        }
+        .logo:hover{
+            transform: scale(1.2);
+        }
+        .nav-btn-all {
+            background-color: blue;
+            width: 300px;
+            height: 60px;
+            float: right;
+        }
+
+        .nav-btn {
+            width: 80px;
+            height: 40px;
+            background-color: pink;
+            float: left;
+            margin-right: 10px;
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 10px;
+            text-decoration:none;
+        }
+        .nav-btn:hover{
+            color:#0011ff;
+            background-color: #ffc0c0;
+            font-size: 32px;
+            border:2px solid #000000;
+
+        }
+        .nav-btn:active{
+            color:blue;
+            background-color: #ff0000;
+        }
+        .go-top{
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            font-size: 24px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: fixed;
+            bottom:0;
+            right:15px;
+            border: 5px solid white;
+            text-decoration:none;
+        }
+        .go-top:hover{
+            color:black;
+            background-color: #ffd900;
+            font-size: 25px;
+            border: 5px solid black;
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo"></div>
+        <div class="nav-btn-all">
+            <a anchor=""></a>
+            <a href="#banner-1" class="nav-btn nav-bth-1">一區</a>
+            <a href="#banner-2" class="nav-btn nav-bth-2">二區</a>
+            <a href="#banner-3" class="nav-btn nav-bth-3">三區</a>
+        </div>
+    </div>
+    <div class="container">
+        <div id="banner-1" class="banner">
+            <div class="mask">
+                <div class="btn">一區</div>
+            </div>
+        </div>
+        <div id="banner-2" class="banner">
+            <div class="mask">
+                <div class="btn">二區</div>
+            </div>
+        </div>
+        <div id="banner-3" class="banner">
+            <div class="mask">
+                <div class="btn">三區</div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="go-top">回首頁</a>
+</body>
+
+</html>

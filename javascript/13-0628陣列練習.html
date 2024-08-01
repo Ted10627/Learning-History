@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陣列練習</title>
+</head>
+<body>
+    <script>
+        // let name = ['nero', 'never', 'andres', 'alex'];
+        // 請在以上的陣列中
+        // 1.加入willa
+        // 2.andres後面加入wade
+        // 3.移除never
+        let name = ['nero', 'never', 'andres', 'alex'];
+        console.log('題目一陣列', name);
+        name.push('willa');
+        console.log('1.加入willa', name);
+        name.splice(3, 0, 'wade');
+        console.log('2.andres後面加入wade', name);
+        name.splice(1, 1);
+        console.log('3.移除never', name);
+        //請在以上的物件中
+        // 1.取出窗戶有幾個
+        // 2.新增24張桌子到物件裡面
+        // 3.新增144張椅子到物件裡面
+        let classroom = { 'widow': 10, 'door': 1 }
+        console.log('題目二-', '窗戶數量:', classroom.widow, '門數量:', classroom.door);
+        console.log('1.取出窗戶有幾個', classroom.widow);
+        classroom.table = 24;
+        console.log('2.新增24張桌子到物件裡面', classroom);
+        classroom.chair = 144;
+        console.log('3.新增144張椅子到物件裡面', classroom);
+        // 陣列和物件的應用：
+        // ＊要新增好幾間教室
+        // ＊教室裡面要有桌子、椅子、窗戶、門、教室名稱
+        // １．請把上面敘述的需求製作出來
+        // ２．用迴圈的方式把教室名稱有幾張桌椅印出來
+        console.log('題目三');
+        const classrooms = [];
+        for (let i = 1; i <= 5; i++) {
+            const ran = () => Math.floor(Math.random() * 999+1);
+            let classroom = {
+                classname: `${i}`,
+                table: ran(),
+                chair: ran(),
+                widow: ran(),
+                door: ran()
+            };
+            classrooms.push(classroom);
+        }
+        classrooms.forEach(classroom => {
+            console.log(
+                'class-', classroom.classname,
+                '桌子:', classroom.table,
+                '椅子:', classroom.chair,
+                '窗戶:', classroom.widow,
+                '門:', classroom.door
+            );
+        });
+    </script>
+</body>
+
+</html>

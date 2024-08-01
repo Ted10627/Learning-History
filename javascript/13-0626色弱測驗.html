@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顏色判斷</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: aquamarine;
+        }
+
+        .box-all {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-box {
+            background-color: #ffffff;
+            min-width: 600px;
+            min-height: 600px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            padding: 2px;
+        }
+
+        .s-box {
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box-all" id="box-all">
+        <div class="score" id="score"><span>分數:</span><span>0</span></div>
+        <div class="main-box" id="main-box">
+            <div class="s-box"></div>
+            <div class="s-box"></div>
+            <div class="s-box"></div>
+            <div class="s-box"></div>
+        </div>
+        <button type="button" id="reset">開始/重置</button>
+    </div>
+    <script src="./js/13-0626色弱測驗.js"></script>
+</body>
+
+</html>

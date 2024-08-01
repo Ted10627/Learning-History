@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>回家作業4/29</title>
+    <style>
+        #nav {
+            width: 100%;
+            height: 60px;
+            background-color: #a2e5ff;
+            position: fixed;
+            z-index: 9;
+            position: relative;
+        }
+
+        #fb {
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            position: absolute;
+            background-image: url(./image/FB.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5px;
+            left: 50px;
+            border-radius: 50%;
+        }
+        #function-1{
+            width: 50px;
+            height: 50px;
+            background-color: #a2e5ff;
+            position: absolute;
+            background-image: url(./image/回首頁.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5px;
+            left: 700px;
+            border-radius: 5%;
+        }
+        #function-2{
+            width: 60px;
+            height: 50px;
+            background-color: #a2e5ff;
+            position: absolute;
+            background-image: url(./image/影片列.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5px;
+            left: 800px;
+            border-radius: 5%;
+        }
+        #function-3{
+            width: 60px;
+            height: 50px;
+            background-color: #a2e5ff;
+            position: absolute;
+            background-image: url(./image/商店.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 1px;
+            left: 900px;
+            border-radius: 5%;
+        }
+        #function-4{
+            width: 60px;
+            height: 50px;
+            background-color: #a2e5ff;
+            position: absolute;
+            background-image: url(./image/鈴鐺.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 1px;
+            left: 1000px;
+            border-radius: 5%;
+        }
+        #text-1 {
+            width: 250px;
+            height: 50px;
+            background-color: #7f9dff5e;
+            position: absolute;
+            top: 5px;
+            left: 125px;
+            border-radius: 10%;
+        }
+
+        #magnifier {
+            width: 40px;
+            height: 40px;
+            background-color: #7f9dff5e;
+            position: absolute;
+            background-image: url(./image/magnifier.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5px;
+            left: 200px;
+            border-radius: 100%;
+        }
+
+        #m-avatar {
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            position: absolute;
+            background-image: url(./image/頭相.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5px;
+            left: 94%;
+            border-radius: 50%;
+        }
+
+        #all {
+            width: 80%;
+            height: 3000px;
+            background-color: #e9fcff;
+            margin: auto;
+        }
+
+        #banner {
+            width: 100%;
+            height: 500px;
+            background-color: black;
+            background-image: url(./image/故宮圖片2.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        #function{
+            width: 90px;
+            height: 20px;
+            background-color: #b9b9b9;
+            position: absolute;
+            bottom: 10px;
+            left: 810px;
+            font-size: 16px;
+            text-align: right;
+            font-weight: bold;
+            border-radius: 5%;
+            color: #000000;
+        }
+        #image-1{
+            width: 16px;
+            height: 16px;
+            background-color: aquamarine;
+            position: absolute;
+            background-image: url(./image/筆\(灰色\).png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: 10%;
+            left: 2%;
+            border-radius: 100%;
+        }
+        
+        #avatar {
+            width: 125px;
+            height: 125px;
+            background-color: aquamarine;
+            position: absolute;
+            background-image: url(./image/頭相.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: -100px;
+            left: 100px;
+            border-radius: 100%;
+        }
+
+        #camera {
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            position: absolute;
+            background-image: url(./image/camera.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: -100px;
+            left: 185px;
+            border-radius: 100%;
+        }
+        #friend-1{
+            width: 32px;
+            height: 32px;
+            background-color: aquamarine;
+            position: absolute;
+            background-image: url(./image/friend1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: -105px;
+            left: 285px;
+            border-radius: 100%;
+            border: 2px solid #000085;
+        }
+        #friend-2{
+            width: 32px;
+            height: 32px;
+            background-color: aquamarine;
+            position: absolute;
+            background-image: url(./image/friend2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: -105px;
+            left: 265px;
+            border-radius: 100%;
+            border: 2px solid #000085;
+        }
+        #friend-3{
+            width: 32px;
+            height: 32px;
+            background-color: aquamarine;
+            position: absolute;
+            background-image: url(./image/friend3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: -105px;
+            left: 245px;
+            border-radius: 100%;
+            border: 2px solid #000085;
+        }
+        #name-1 {
+            width: 200px;
+            height: 30px;
+            background-color: #e9fcff;
+            position: absolute;
+            bottom: -35px;
+            left: 250px;
+            font-size: 32px;
+            font-weight: bold;
+            color: #00005f;
+        }
+        #text-2 {
+            width: 200px;
+            height: 30px;
+            background-color: #e9fcff;
+            position: absolute;
+            bottom: -65px;
+            left: 250px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #00008ba9;
+        }
+
+        #text-3 {
+            width: 135px;
+            height: 20px;
+            background-color: #2337eb;
+            position: absolute;
+            bottom: -80px;
+            left: 70%;
+            font-size: 16px;
+            text-align: right;
+            font-weight: bold;
+            border-radius: 5%;
+            color: #ffffff;
+        }
+
+        #cross {
+            width: 16px;
+            height: 16px;
+            background-color: aquamarine;
+            position: absolute;
+            background-image: url(./image/十字.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: 10%;
+            left: 2%;
+            border-radius: 100%;
+        }
+
+        #text-4 {
+            width: 90px;
+            height: 20px;
+            background-color: #ffffff;
+            position: absolute;
+            bottom: -81px;
+            left: 85%;
+            font-size: 16px;
+            text-align: right;
+            font-weight: bold;
+            color: #2337eb;
+            border: 1px solid #2337eb;
+            border-radius: 10%;
+        }
+
+        #pen {
+            width: 16px;
+            height: 16px;
+            background-color: aquamarine;
+            position: absolute;
+            background-image: url(./image/筆.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: 10%;
+            left: 4%;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="fb"></div>
+        <div id="function-1"></div>
+        <div id="function-2"></div>
+        <div id="function-3"></div>
+        <div id="function-4"></div>
+        <div id="function-5"></div>
+        <div id="m-avatar"></div>
+        <div id="text-1">
+            <div id="magnifier"></div>
+        </div>
+    </div>
+    <div id="all">
+        <div id="banner">
+            <div id="function">編輯照片
+                <div id="image-1"></div>
+            </div>
+            <div id="avatar"></div>
+            <div id="camera"></div>
+            <div id="friend-1"></div>
+            <div id="friend-2"></div>
+            <div id="friend-3"></div>
+            <div id="name-1">Cucumars Lu</div>
+            <div id="text-2">有3位朋友</div>
+            <div id="text-3">新增到限時動態
+                <div id="cross"></div>
+            </div>
+            <div id="text-4">編輯檔案
+                <div id="pen"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

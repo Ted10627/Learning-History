@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡片練習</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .card{
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border: 1px solid #c280ff;
+            box-shadow: 10px 10px black;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+        .card-1{
+            transform:rotate(-10deg)
+        }
+        .card-2{
+            height: 280px;
+            transform:rotate(15deg)
+        }
+        img{
+            background-size: cover;
+            width: 100%;
+        }
+        .caption{
+            text-wrap: wrap;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card card-1">
+        <img src="../image/十和田湖.jpg" alt="湖照">
+        <p class="caption">日本東北</p>
+    </div>
+    <div class="card card-2">
+        <img src="../image/東北背景.webp" alt="驛站">
+        <p class="caption">日本東北</p>
+    </div>
+</body>
+</html>

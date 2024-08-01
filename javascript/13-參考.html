@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>叫號系統</title>
+</head>
+
+<body>
+    <div id="out">
+        <span id="called-number"></span>
+    </div>
+    <input type="number" id="input">
+    <button type="button" id="in-btn">輸入</button>
+    <button type="button" id="call-btn">叫號</button>
+
+    <script>
+        const inputButton = document.querySelector('#in-btn');
+        const callButton = document.querySelector('#call-btn');
+        const inputField = document.querySelector('#input');
+        const calledNumberSpan = document.querySelector('#called-number');
+        let queue = [];
+        
+        inputButton.addEventListener('click', function () {
+            const inputValue = inputField.value;
+            if (inputValue) {
+                queue.push(inputValue);
+                inputField.value = ''; // 清空输入框
+            }
+        });
+
+        callButton.addEventListener('click', function () {
+            if (queue.length > 0) {
+                const calledNumber = queue.shift();
+                calledNumberSpan.textContent = `叫號: ${calledNumber}`;
+            } else {
+                calledNumberSpan.textContent = '沒有號碼在隊列中';
+            }
+        });
+    </script>
+</body>
+
+</html>
